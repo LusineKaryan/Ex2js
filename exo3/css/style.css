@@ -1,11 +1,17 @@
 body {background-color:#666;}
 
-#timedate {
-  font: small-caps bold 43px Arial, Helvetica, sans-serif;
-  text-align:left;
-  width: 50%;
-  margin: 20px auto;
-  color:#333;
-  border-left: 20px solid yellow;
-  padding: 20px;
+#chronometre{
+  text-align: center;
+  width: 500px
+}
+.time {
+  border: 2px solid black;
+}
+
+#chronometre button{
+background:coral ;
+height: 20px;
+width: 80px;
+
+
 }

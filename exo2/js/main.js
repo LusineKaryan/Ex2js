@@ -1,4 +1,4 @@
-document.getElementById('myText').className = 'blue'
+/*document.getElementById('myText').className = 'blue'
 
 const button = document.getElementById('button');
 
@@ -12,4 +12,14 @@ function changer_style(){
 	el.style.margin = "200px 0 0 200px";
 }
 
-button.addEventListener('click', changer_style); 
+button.addEventListener('click', changer_style); */
+
+
+
+function changer_style() {
+    let p = document.getElementById("p");
+    p.style.color = "white";
+    p.style.backgroundColor = "red";
+    p.style.border = "2px dashed black";
+    p.style.padding = "5px";
+}
