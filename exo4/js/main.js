@@ -1,6 +1,6 @@
 function str_fisrt_letter(ch){
     /*L'expression régulière qui ^[a-d] pour tester si la chaîne commence par une lettre entre a et le modificateur i pour ne pas faire de différence entre majuscules et minuscules   */
-       var pattern =/^[a-d]/i; 
+       var pattern =/^[a-d]/i; //Expression régulier Regex
        var res = document.getElementById("res1");
        if(pattern.test(ch)){
            res.innerHTML=ch+" chaîne valide  commence par une lettre entre a et d ";
@@ -13,6 +13,7 @@ function str_fisrt_letter(ch){
   function str_email(ch){
        var res = document.getElementById("res2");
        /*La fonction split(@) transforme la chaîne en tableau de sous chaines à partir du caractère séparateur ici '@' .Si c.lenght=1 donc la chaîne ne contient pas @ et si c.lenght>2 alors il contient plusieurs '@' */
+       
        var c =ch.split('@');
        if(c.length==2){
            res.innerHTML=ch+" chaîne valide : contient un seul caractère @ ";
@@ -25,7 +26,7 @@ function str_fisrt_letter(ch){
 
   function str_number(ch){
       var res = document.getElementById("res3");
-        var pattern =/\d/;
+        var pattern =/\d/;  //Expression régulier Regex
         /*La fonction search peut prendre en paramètre une expression régulière*/
       if(ch.search(pattern)!=-1){
          res.innerHTML=ch+" chaîne valide : contient un nombre  ";

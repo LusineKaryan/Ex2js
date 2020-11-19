@@ -1,4 +1,5 @@
-let tab = new Array();
+let tab = new Array(); //Objet tableau
+// let tab = []; //Tableau vide
 
 function add_name(){
     tab.push(prompt("Saisir un nom"));
@@ -6,7 +7,7 @@ function add_name(){
 
 function random(){
     if(tab.length>0){
-        let rand = Math.floor(Math.random()*tab.length);
+        let rand = Math.floor(Math.random()*tab.length);//Math. random( )envoi un nombre flottant psevdo alletoir ntre (o;1)
         alert("Le gagnant est :"+tab[rand]);
     }
 
